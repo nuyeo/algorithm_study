@@ -1,3 +1,5 @@
+package main.java.study.a01_ds.d01.p1966;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayDeque;
