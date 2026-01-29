@@ -26,6 +26,10 @@ if [[ ! "$CURRENT_BRANCH" =~ ^[0-9]+-[0-9]+/[0-9]+$ ]]; then
   exit 1
 fi
 
+# Git 저장소 루트로 이동
+REPO_ROOT=$(git rev-parse --show-toplevel)
+cd "$REPO_ROOT"
+
 # 파일 추가
 git add .
 
