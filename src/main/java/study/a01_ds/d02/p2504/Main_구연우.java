@@ -27,6 +27,10 @@ public class Main_구연우 {
                 temp *= 3;
             } else if (now == ')') {
                 try {
+                    if (stack.isEmpty() || stack.peek() != '(') {
+                        System.out.println(0);
+                        return;
+                    }
                     stack.pop();
                     if (str.charAt(i-1) == '(') {
                         result += temp;
@@ -38,6 +42,10 @@ public class Main_구연우 {
                 }
             } else if (now == ']') {
                 try {
+                    if (stack.isEmpty() || stack.peek() != '[') {
+                        System.out.println(0);
+                        return;
+                    }
                     stack.pop();
                     if (str.charAt(i-1) == '[') {
                         result += temp;
