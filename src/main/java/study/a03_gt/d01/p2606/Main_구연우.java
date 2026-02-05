@@ -1,4 +1,4 @@
-package main.java.study.a03_gt.p2606;
+package main.java.study.a03_gt.d01.p2606;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
